@@ -72,6 +72,12 @@ lib/client.js      浏览器半边：window.__ModuleLoader__.load({ id, factory 
 
 ## 安装 / 更新
 
+**从 npm 安装（推荐）**
+
+```bat
+dsh plugin --profile desktop add "dsh-reversed-chat"
+```
+
 **从 GitHub 安装（公开仓库）**
 
 ```bat
