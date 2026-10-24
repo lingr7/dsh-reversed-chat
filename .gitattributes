@@ -1,0 +1,4 @@
+# Normalize line endings: always LF in the repository and working tree,
+# so installs from git (dsh plugin add github:...) behave the same everywhere.
+* text=auto eol=lf
+*.png binary

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Reversed Chat · Top Composer",
+    "description": "Reverses the conversation layout: the composer sits at the top of an active conversation and the transcript plus the turn rail render newest-first, so new replies appear right under the composer."
+  }
+}

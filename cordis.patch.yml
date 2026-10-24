@@ -1,0 +1,18 @@
+# dsh-reversed-chat bundle: insert a Loader entry row.
+# `dsh plugin add` applies this patch at install time; the Loader entry is what
+# the plugin manager lists (with its enable/disable switch). The client scanner
+# separately loads lib/client.js from the dsh.client declaration.
+#
+# HARD REQUIREMENT (host hint): "bundle patch 含配置/表达式, 热挂载仅支持纯
+# insert; 重启后由 bundle 层生效" — bundle patches that carry config fields or
+# expressions are NOT hot-mounted; only pure inserts ({id, name}) are. Keep
+# this file a pure insert: default enablement belongs to the profile patch
+# layer (an id-targeted `disabled` row) or to the plugin manager switch —
+# never to this file.
+# This is the ONLY place that inserts this row. Never mirror it with an
+# `insert` in a profile's cordis.patch.yml: two composed rows with the same id
+# make the plugin manager treat the row as unaddressable
+# (「当前 profile 的 patch 无法唯一定位这一项」) and disable its switch.
+- insert:
+    - id: dsh-reversed-chat
+      name: dsh-reversed-chat

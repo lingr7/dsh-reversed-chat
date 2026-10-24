@@ -1,0 +1,56 @@
+{
+  "name": "dsh-reversed-chat",
+  "version": "0.7.1",
+  "description": "DSH client plugin: reverses the conversation reading layout — the composer pins to the TOP of an active conversation (centered on a new one) and the transcript plus turn navigator render newest-first, so replies appear right under the composer.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lingr7/dsh-reversed-chat"
+  },
+  "homepage": "https://github.com/lingr7/dsh-reversed-chat#readme",
+  "bugs": {
+    "url": "https://github.com/lingr7/dsh-reversed-chat/issues"
+  },
+  "author": "lingr7",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "plugin",
+    "ui",
+    "composer",
+    "reversed-reading"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.2"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,13 @@
+# dependencies / build output (none expected, but keep the repo clean)
+node_modules/
+lib/*.map
+
+# local backups
+*.bak
+*.bak-*
+
+# editor / OS noise
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
