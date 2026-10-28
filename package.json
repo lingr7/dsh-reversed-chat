@@ -1,6 +1,6 @@
 {
   "name": "dsh-reversed-chat",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "DSH client plugin: reverses the conversation reading layout — the composer pins to the TOP of an active conversation (centered on a new one) and the transcript plus turn navigator render newest-first, so replies appear right under the composer.",
   "type": "module",
   "main": "lib/index.js",
