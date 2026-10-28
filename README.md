@@ -2,7 +2,7 @@
 
 > DSH Web 客户端插件：**输入框置顶 + 对话倒序阅读**——最新回复紧贴输入框出现，时间线自下而上。
 
-![真机效果演示：输入框置顶 + 消息级倒序](assets/demo.gif)
+![真机效果演示：输入框置顶 + 消息级倒序](https://raw.githubusercontent.com/lingr7/dsh-reversed-chat/main/assets/demo.gif)
 
 **阅读方向是倒序的（时间线自下而上）**：输入框固定在顶部，紧贴它的是**模型的最新回复**；往下依次是**你刚才的提问**、上一轮回复、更早的提问……越往下越早，正好与默认「最新在底部」的聊天相反。
 
@@ -43,9 +43,9 @@ dsh plugin --profile desktop add "link:<plugin-dir>"
 
 ## 文档
 
-- [实现原理与已知取舍](docs/design.md)
-- [版本历史与修复记录](docs/changelog.md)
-- [文件结构与打包](docs/packaging.md)
+- [实现原理与已知取舍](https://github.com/lingr7/dsh-reversed-chat/blob/main/docs/design.md)
+- [版本历史与修复记录](https://github.com/lingr7/dsh-reversed-chat/blob/main/docs/changelog.md)
+- [文件结构与打包](https://github.com/lingr7/dsh-reversed-chat/blob/main/docs/packaging.md)
 
 ## 链接
 
